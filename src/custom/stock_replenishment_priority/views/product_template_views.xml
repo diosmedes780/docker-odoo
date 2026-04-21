@@ -9,6 +9,9 @@
             <xpath expr="//field[@name='barcode']" position="after">
                 <field name="replenishment_priority"/>
             </xpath>
+            <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+                <field name="stock_target"/>
+            </xpath>
         </field>
     </record>
     

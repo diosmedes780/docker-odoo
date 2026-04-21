@@ -10,3 +10,4 @@ class ProductTemplate(models.Model):
         [('low', 'Low'), 
         ('average', 'Average'), 
         ('high', 'High')], string="Replenishment priority")
+    stock_target = fields.Float(string="Target Stock", help="Desired quantity in stock")
