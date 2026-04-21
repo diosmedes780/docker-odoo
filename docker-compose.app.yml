@@ -1,6 +1,6 @@
 services:
   odoo:
-    command: odoo --dev=all
+    command: odoo --dev=all --addons-path=/usr/lib/python3/dist-packages/odoo/addons,/home/odoo/src/custom
     restart: always
     container_name: ${PROJECT_NAME}
     build:
