@@ -1,5 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
 .env
-src
 .resources/Dockerfile
 .resources/dbconfigs/pg_hba.conf
 **/.vscode/
