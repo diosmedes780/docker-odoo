@@ -15,4 +15,42 @@
         </field>
     </record>
     
+    <record id="product_template_search_replenishment_view" model="ir.ui.view">
+        <field name="name">product.template.search.replenishment</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter string="Stock Bajo Objetivo" name="low_stock" 
+                        domain="[('needs_replenishment', '=', True)]"/>
+                <separator/>
+            
+                <group expand="0" string="Group by">
+                    <filter string="Replenishment Priority" 
+                            name="group_by_replenishment_priority" 
+                            context="{'group_by': 'replenishment_priority'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    
+    <record id="action_product_replenishment_dashboard" model="ir.actions.act_window">
+        <field name="name">Products to Restock</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="domain">[('needs_replenishment', '=', True)]</field>
+        <field name="context">{'group_by': ['replenishment_priority']}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Everything is up to date! There are no products awaiting restocking.
+            </p>
+        </field>
+    </record>
+    
+    <menuitem id="menu_product_replenishment"
+              name="Pending Restock"
+              action="action_product_replenishment_dashboard"
+              parent="stock.menu_stock_root"
+              sequence="35"/>
+    
 </odoo>

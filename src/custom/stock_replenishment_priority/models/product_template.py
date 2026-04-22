@@ -11,6 +11,16 @@ class ProductTemplate(models.Model):
         ('average', 'Average'), 
         ('high', 'High')], string="Replenishment priority")
     stock_target = fields.Float(string="Target Stock", help="Desired quantity in stock")
+    needs_replenishment = fields.Boolean(
+        string="Needs Restocking",
+        compute="_compute_needs_replenishment",
+        store=True
+    )
+
+    @api.depends('qty_available', 'stock_target')
+    def _compute_needs_replenishment(self):
+        for product in self:
+            product.needs_replenishment = product.qty_available < product.stock_target
 
     @api.model
     def run_check_low_stock_activity(self):
