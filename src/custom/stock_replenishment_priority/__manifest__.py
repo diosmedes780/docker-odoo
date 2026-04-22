@@ -7,6 +7,7 @@
     'summary': 'Replenishment rules by priority',
     'depends': ['base','product','stock'],
     'data': [
+        'data/ir_cron_data.xml',
         'views/product_template_views.xml',
     ],
     'installable': True,
