@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_discount_by_schedule
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20260420\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-23 07:53+0000\n"
+"PO-Revision-Date: 2026-04-23 04:00-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__discount_percentage
+msgid "Discount (%)"
+msgstr "Descuento (%)"
+
+#. module: pos_discount_by_schedule
+#: model_terms:ir.ui.view,arch_db:pos_discount_by_schedule.view_pos_discount_rule_form
+msgid "Discount Rule"
+msgstr "Regla de descuento"
+
+#. module: pos_discount_by_schedule
+#: model:ir.actions.act_window,name:pos_discount_by_schedule.action_pos_discount_rule
+#: model:ir.ui.menu,name:pos_discount_by_schedule.menu_pos_discount_rule
+#: model_terms:ir.ui.view,arch_db:pos_discount_by_schedule.view_pos_discount_rule_tree
+msgid "Discount Rules"
+msgstr "Reglas de descuento"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__hour_to
+msgid "End Time"
+msgstr "Hora Final"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,help:pos_discount_by_schedule.field_pos_discount_rule__hour_from
+msgid "Example: 08.00 for 8 AM"
+msgstr "Ejemplo: 08.00 para las 08:00 AM "
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,help:pos_discount_by_schedule.field_pos_discount_rule__hour_to
+msgid "Example: 20.00 for 8 PM"
+msgstr "Ejemplo: 20.00 para las 8:00 PM"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__id
+msgid "ID"
+msgstr ""
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,help:pos_discount_by_schedule.field_pos_discount_rule__is_exclusive
+msgid "If checked, this discount overrides any other manual discounts on the line."
+msgstr "Si se marca esta casilla, este descuento prevalecerá sobre cualquier otro descuento manual aplicado a la línea."
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model,name:pos_discount_by_schedule.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Pedidos de TPV"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model,name:pos_discount_by_schedule.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sesión TPV"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__hour_from
+msgid "Start Time"
+msgstr "Hora de inicio"
+
+#. module: pos_discount_by_schedule
+#. odoo-python
+#: code:addons/pos_discount_by_schedule/models/pos_discount_rule.py:0
+#, python-format
+msgid "The hours must be between 0 and 24."
+msgstr "Las horas deben estar comprendidas entre 0 y 24."
+
+#. module: pos_discount_by_schedule
+#. odoo-python
+#: code:addons/pos_discount_by_schedule/models/pos_discount_rule.py:0
+#, python-format
+msgid "The start time must be earlier than the end time."
+msgstr "La hora de inicio debe ser anterior a la hora de finalización."
+
+#. module: pos_discount_by_schedule
+#: model:ir.model,name:pos_discount_by_schedule.model_pos_discount_rule
+msgid "Time-Based Discount Rule"
+msgstr "Regla de descuento por tiempo"
+
+#. module: pos_discount_by_schedule
+#: model:ir.model.fields,field_description:pos_discount_by_schedule.field_pos_discount_rule__is_exclusive
+msgid "¿Exclusive Discount?"
+msgstr "¿Descuento exclusivo?"
